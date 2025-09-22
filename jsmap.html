@@ -1,0 +1,54 @@
+<html>
+	<body>
+		<script>
+			/*number to string*/
+			const nums = [1, 2, 3]; 
+			const str = nums.map(number=>String(number))
+			console.log(str)
+			
+			/*index to values*/
+			const arr = ['a', 'b', 'c'];
+			arr.forEach((value,index)=>{
+				console.log(index+" "+value)
+			})
+			
+			
+			/*first letter uppercase*/
+			const words = ['apple', 'banana'];
+			let c=""
+			let d=""
+			words.forEach((value,index)=>{
+				c=value.charAt(0).toUpperCase() 
+				d=value.slice(1)
+				console.log(c+d)
+				
+			})
+			
+			/*scores*/
+			const scores = [90, 45, 75,30];
+			scores.map(s=> {
+				if(s>=40){
+					console.log("pass",s)
+				}
+				else{
+					console.log("fail",s)
+				}
+			})
+			
+			
+			const prices = [50, 100];
+			let symbol=""
+			prices.forEach((value,index)=>{
+				symbol="$"
+				console.log(symbol+value)
+				
+			})
+		
+		
+		
+		
+		
+		</script>
+	
+	</body>
+</html>
